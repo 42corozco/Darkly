@@ -11,3 +11,8 @@ curl -X POST http://192.168.56.110/?page=survey -H "Content-Type: application/x-
 The payload was successful and we got the flag:
 
 ![proof from the web interface](./Resource/inspector-view.png)
+
+## FLAG
+[-- 🌱 --][2]
+
+[2]: ./flag.txt

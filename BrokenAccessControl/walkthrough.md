@@ -24,6 +24,8 @@
 
 ![?????](./Resource/4-Crypter-true.png)
 
+![?????](./Resource/5-exploit.png)
+
 ## Solution
 
 * server-side access control to prevent metadata manipulation
@@ -31,6 +33,17 @@
 OR:
 
 * use of hard cryptographic algorithm + generate random number as admin cookie + short lived cookies
+
+## Sources
+
+- ### Cipher-identifier
+    ```
+    https://www.dcode.fr/cipher-identifier
+    ```
+- ### Encruption and Decruption MD5
+    ```
+    https://md5decrypt.net/
+    ```
 
 ## FLAG
 [-- 🌱 --][2]

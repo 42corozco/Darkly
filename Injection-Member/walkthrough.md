@@ -46,3 +46,8 @@ http://192.168.56.110/?page=member&id=1%20and%201=2%20union%20select%20group_con
 Then we just have to do what the commentary ask and we have the flag.
 
 Source: https://medium.com/@nyomanpradipta120/sql-injection-union-attack-9c10de1a5635
+
+## FLAG
+[-- 🌱 --][2]
+
+[2]: ./flag.txt
