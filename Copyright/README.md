@@ -10,9 +10,9 @@ The copyright page is very CTF-like. First we click on the copyright logo which 
 
 ![Result after inspecting the source code](./Resource/inspectingcode.png)
 
-The comments hint us to "come from" the NSA website and to use a specific browser "ft_bornToSec".
-
 ![Second hint](./Resource/hint2.png)
+
+The comments hint us to "come from" the NSA website and to use a specific browser "ft_bornToSec".
 
 ## Weaknesses
 
