@@ -15,19 +15,23 @@
 
 ## Exploitation
 
-```<script>alert<script>
+```
+<script>alert<script>
 ```
 
 or
 
-```script
+```
+script
 ```
 
 but if we write 
-```<script>alert('kikou');</script>
-```
- it does not work
 
+```
+<script>alert('kikou');</script>
+```
+
+it does not work
 
 Also, sending an empty message with a user starting with a like in this [command][1]
 we get this [response][2]
