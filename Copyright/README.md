@@ -10,7 +10,7 @@ The copyright page is very CTF-like. First we click on the copyright logo which 
 
 ![Result after inspecting the source code](./Resource/inspectingcode.png)
 
-The comments hint us to "come from" a specific url, and to use a specific browser
+The comments hint us to "come from" the NSA website and to use a specific browser "ft_bornToSec".
 
 ![Second hint](./Resource/hint2.png)
 
@@ -18,17 +18,17 @@ The comments hint us to "come from" a specific url, and to use a specific browse
 
 * Security data exposure in the comments of the page
 
-By inspecting the page we found out that a specific behaviour of the server by coming from the nsa website and if we used a specific browser.
+By inspecting the page, we found out that we can trigger a specific behaviour of the server. To do so, we need to follow the hints written in the comments.
 
 * Insecure design
 
-This specific behaviour we are trying to trigger is based on client-side data and thus can be easily spoofed.
+The behaviour we want to trigger to get the flag is based on data that can be manipulated on the client-side. As such, we can pretend to the server that coming from the NSA website and that we are using the required ft_bornToSec browser.
 
 ## Exploitation
 
-To trigger the behaviour and get the flag we must send a specific GET request to the vulnerable URL and modify two headers: Referer and User-Agent.
+To trigger the behaviour and get the flag we must modify two headers: Referer and User-Agent.
 
-Referer header indicates to the server where the client comes from. Thus by modifying this value we can pretend we come from the nsa website.
+Referer header indicates to the server where the client comes from.
 
 User-Agent header indicates information about the browser and more, that the client is using to perform the request. This way we can pretend that we are using the ft_borntoSec browser.
 
@@ -45,7 +45,6 @@ And we have the flag
 * Not exposing sensitive data by removing comments in production code or by not writing sensitive data in comments at all
 
 * The user-agent and referer data can be modified and spoofed by the client. As such, they should not be used to trigger specific behaviours that give more permissions.
-
 
 ## FLAG
 
