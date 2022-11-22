@@ -4,36 +4,47 @@
 
 * Url: http://192.168.56.101/?page=feedback
 
-## Exploit found
+## Enumeration
 
-* on essaie d'envoyer un 'feedback' vide.
+* We tried to send nothing
 
 ![?????](./Resource/1-vide.png)
 
-## Weaknesses
+* We try to execute some script in the comment
 
-* No lo se
 
 ## Exploitation
 
-* Sur la terminal on lance la [commande][1], le serveur nous [répond][2] avec le flag.
+```<script>alert<script>
+```
+
+or
+
+```script
+```
+
+but if we write 
+```<script>alert('kikou');</script>
+```
+ it does not work
+
+
+Also, sending an empty message with a user starting with a like in this [command][1]
+we get this [response][2]
 
 [1]: ./Resource/payload.txt
 [2]: ./Resource/response.txt
 
-### or
-
-* On envoyant un mot commençant par a
-
 ![?????](./Resource/3-a.png)
+
+## Weaknesses
+
+* **Vulnerable to XSS**: this feedback form allows us to execute code
 
 ## Solution
 
-* No lo se
+* Escaping or filtering some symbols like \'< etc could make it more difficult to perform XSS on the page
 
-## Sources
-
-* No lo se
 
 ## FLAG
 [-- 🌱 --][3]
