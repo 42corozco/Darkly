@@ -8,7 +8,7 @@
 
 The copyright page is very CTF-like. First we click on the copyright logo which direct us at the URL above.
 
-![Result after inspecting the source code](./Resource/inspecting_code.png)
+![Result after inspecting the source code](./Resource/inspecting code.png)
 
 The comments hint us to "come from" a specific url, and to use a specific browser
 
