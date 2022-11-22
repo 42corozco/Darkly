@@ -1,35 +1,37 @@
-# Recover Password
+# Password reset poisoning
 
 ## Page
+
 * Url: http://192.168.56.101/?page=recover
 
-## Exploit found
+## Enumeration
 
-* No lo se
+Inspecting the recovery page, we notice the email address to which the recover password is sent.
 
 ![?????](./Resource/1-DefaultMail.png)
 
+Submitting the form we get the following page.
+
 ![?????](./Resource/2-ResDefaultMail.png)
 
-## Weaknesses
-
-* No lo se
 
 ## Exploitation
 
-* Cambiar el value (email) donde se dirije la respuesta
+* Change the email address to redirect to another one we own
 
 ![?????](./Resource/3-ChangeMail.png)
 
+We get the flag:
+
 ![?????](./Resource/4-ResChangeMail.png).
+
+## Weaknesses
+
+* **Trusting client-side data**: The reset password strategy should no integrate client-side data. Instead, the back-end should verify that the email actually exist in their database.
 
 ## Solution
 
-* No lo se
-
-## Sources
-
-* No lo se
+* Check against the database that the email address exist.
 
 ## FLAG
 [-- 🌱 --][2]
