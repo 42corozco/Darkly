@@ -8,22 +8,22 @@
 
 Inspecting the recovery page, we notice the email address to which the recover password is sent.
 
-![?????](./Resource/1-DefaultMail.png)
+![?????](./Resources/1-DefaultMail.png)
 
 Submitting the form we get the following page.
 
-![?????](./Resource/2-ResDefaultMail.png)
+![?????](./Resources/2-ResDefaultMail.png)
 
 
 ## Exploitation
 
 * Change the email address to redirect to another one we own
 
-![?????](./Resource/3-ChangeMail.png)
+![?????](./Resources/3-ChangeMail.png)
 
 We get the flag:
 
-![?????](./Resource/4-ResChangeMail.png).
+![?????](./Resources/4-ResChangeMail.png).
 
 ## Weaknesses
 
